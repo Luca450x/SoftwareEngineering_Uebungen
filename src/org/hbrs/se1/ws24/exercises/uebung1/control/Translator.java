@@ -18,6 +18,7 @@ interface Translator {
 	 * Repraesentation gemaess der Spezifikation in der Aufgabe 1-2 
 	 */
 	public String translateNumber(int number);
+	
 
 } 
 

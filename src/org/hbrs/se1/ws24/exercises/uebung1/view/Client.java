@@ -1,4 +1,6 @@
 package org.hbrs.se1.ws24.exercises.uebung1.view;
+import com.sun.java.accessibility.util.Translator;
+import org.hbrs.se1.ws24.exercises.uebung1.control.GermanTranslator;
 
 public class Client {
 
@@ -8,18 +10,15 @@ public class Client {
 		 *
 		 */
 		 void display( int aNumber ){
-			// In dieser Methode soll die Methode translateNumber
-			// mit dem übergegebenen Wert der Variable aNumber
-			// aufgerufen werden.
-			//
-			// Strenge Implementierung (nur) gegen das Interface Translator gewuenscht!
+			Object a = aNumber;
+			 GermanTranslator translator = (GermanTranslator) a;
 
-			 System.out.println("Das Ergebnis der Berechnung: " +
-					"[das Ergebnis an dieser Stelle]" );
+
+			 System.out.println("Das Ergebnis der Berechnung: " + translator.translateNumber((Integer) a));
+
 
 		 }
 }
-
 
 
 
